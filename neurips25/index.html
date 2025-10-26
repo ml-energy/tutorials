@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NeurIPS 2025 Tutorial · Energy & Power as First‑Class ML Metrics</title>
+  <meta name="description" content="Official page for the NeurIPS 2025 tutorial: Energy & Power as First‑Class ML Design Metrics. Agenda, speakers, resources, hands‑on materials, and collaborators." />
+  <meta property="og:title" content="NeurIPS 2025 Tutorial · Energy & Power as First‑Class ML Metrics" />
+  <meta property="og:description" content="Agenda, speakers, resources, hands‑on materials, and collaborators." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ml.energy/tutorials/neurips25" />
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../assets/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../assets/favicon/safari-pinned-tab.svg" color="#000000">
+  <link rel="shortcut icon" href="../assets/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#000000">
+  <meta name="theme-color" content="#000000">
+  <link rel="stylesheet" href="./assets/style.css">
+  <script src="./assets/theme.js"></script>
+</head>
+<body>
+  <button id="themeBtn" type="button" aria-label="Toggle theme" title="Toggle theme">🌙 Dark</button>
+  <div class="wrap">
+    <header class="hero">
+      <div>
+        <span class="badge">NeurIPS 2025 Tutorial</span>
+        <h1>Energy & Power as First‑Class ML Design Metrics</h1>
+        <p class="subtitle">Energy is the ultimate bottleneck for ML today. Practical measurements with a hands-on tutorial, a primer on power & energy as computing resources, and optimizations from kernels to clusters.</p>
+        <div class="meta">
+          <div class="pill">🗓️ Dec 2nd (Tue) 9:30 AM - 12:00 PM PST</div>
+          <div class="pill">📍 Upper Level Ballroom 6AB</div>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 16px;">
+        <div class="hero-card">
+          <div class="hdr">
+            <h3 style="margin:0">Collaboration</h3>
+            <code class="kbd" style="margin-top: 1px">The ML.ENERGY Initiative + NVIDIA</code>
+          </div>
+          <p class="muted">This tutorial is a collaboration between <a href="https://ml.energy">The ML.ENERGY Initiative</a>/University of Michigan and NVIDIA. All materials (slides, hands‑on notebooks, references) will be openly available after the tutorial.</p>
+        </div>
+          <div class="notice" role="note" aria-label="Status">
+            <strong>Status</strong>: Draft agenda, talk title and abstract, and speaker list are public.
+          </div>
+      </div>
+    </header>
+
+    <section id="agenda" style="margin-top: 18px;">
+      <div class="hdr">
+        <h2 class="h2">Agenda</h2>
+      </div>
+      <div class="card">
+        <ul class="timeline">
+          <li>
+            <div class="muted">9:30-9:40 AM</div>
+            <div class="agenda-item">
+              <h4><a href="./opening.html">Opening: Why power and energy — and why now?</a></h4>
+              <div class="by">Speaker: <strong>Jae-Won Chung</strong> (University of Michigan)</div>
+            </div>
+          </li>
+          <li>
+            <div class="muted">9:40-10:10 AM</div>
+            <div class="agenda-item">
+              <h4><a href="./session-1.html">Session 1: Accurately benchmarking power & energy</a></h4>
+              <div class="by">Speaker: <strong>Jae-Won Chung</strong> (University of Michigan)</div>
+            </div>
+          </li>
+          <li>
+            <div class="muted">10:10-10:40 AM</div>
+            <div class="agenda-item">
+              <h4><a href="./session-2.html">Session 2: Optimizing performance under power constraints</a></h4>
+              <div class="by">Speaker: <strong>Ahmet Inci</strong> (NVIDIA).</div>
+            </div>
+          </li>
+          <li>
+            <div class="muted">10:40-10:55 AM</div>
+            <div class="agenda-item">
+              <h4>Break + Q&A</h4>
+              <div class="by">Live Q&A; feedback collection.</div>
+            </div>
+          </li>
+          <li>
+            <div class="muted">10:55-11:25 AM</div>
+            <div class="agenda-item">
+              <h4><a href="./session-3.html">Session 3: Optimizing energy with performance in mind</a></h4>
+              <div class="by">Speaker: <strong>Ruofan Wu</strong> (University of Michigan).</div>
+            </div>
+          </li>
+          <li>
+            <div class="muted">11:25-11:55 AM</div>
+            <div class="agenda-item">
+              <h4><a href="./panel.html">Industry panel: Power & energy in production ML</a></h4>
+              <div class="by">Panelists: NVIDIA, Google, Tentative. Moderator: Jae-Won Chung.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contributors" style="margin-top: 24px;">
+      <div class="hdr">
+        <h2 class="h2">Speakers & Contributors</h2>
+      </div>
+      <div class="grid">
+        <div class="card" style="grid-column: span 12;">
+          <h3 style="margin-top:0;">Main Speakers</h3>
+          <div class="people">
+            <a class="chip" href="https://jaewonchung.me/about">
+              <span class="avatar" style="background-image: url('./assets/images/people/jae-won.jpg')" aria-hidden="true"></span>
+              <span class="name-org">
+                <span class="name">Jae-Won Chung</span>
+                <span class="role">University of Michigan</span>
+              </span>
+            </a>
+            <a class="chip" href="https://inciaf.github.io/">
+              <span class="avatar" style="background-image: url('./assets/images/people/ahmet.jpeg')" aria-hidden="true"></span>
+              <span class="name-org">
+                <span class="name">Ahmet Inci</span>
+                <span class="role">NVIDIA</span>
+              </span>
+            </a>
+            <a class="chip" href="https://ruofan-wu.github.io/">
+              <span class="avatar" style="background-image: url('./assets/images/people/ruofan.jpg')" aria-hidden="true"></span>
+              <span class="name-org">
+                <span class="name">Ruofan Wu</span>
+                <span class="role">University of Michigan</span>
+              </span>
+            </a>
+          </div>
+          <h3>Industry Panel</h3>
+          <div class="people">
+            <a class="chip" href="https://www.linkedin.com/in/bhargava-gopireddy/">
+              <span class="avatar" style="background-image: url('./assets/images/people/bhargava.jpeg')" aria-hidden="true"></span>
+              <span class="name-org">
+                <span class="name">Bhargava Gopireddy</span>
+                <span class="role">NVIDIA</span>
+              </span>
+            </a>
+            <a class="chip" href="https://www.linkedin.com/in/coopere/">
+              <span class="avatar" style="background-image: url('./assets/images/people/cooper.jpeg')" aria-hidden="true"></span>
+              <span class="name-org">
+                <span class="name">Cooper Elsworth</span>
+                <span class="role">Google</span>
+              </span>
+            </a>
+            <a class="chip" href="/">
+              <span class="avatar" aria-hidden="true"></span>
+              <span class="name-org">
+                <span class="name">Tentative</span>
+                <span class="role">Tentative</span>
+              </span>
+            </a>
+            <a class="chip" href="https://jaewonchung.me/about">
+              <span class="avatar" style="background-image: url('./assets/images/people/jae-won.jpg')" aria-hidden="true"></span>
+              <span class="name-org">
+                <span class="name">Jae-Won Chung (Moderator)</span>
+                <span class="role">University of Michigan</span>
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="card" style="grid-column: span 12;">
+          <h3 style="margin-top:0;">Contributors</h3>
+          <p class="muted">Content development, review, and management support for this tutorial.</p>
+          <div class="people" id="contributors-list">
+            <a class="chip" href="https://mosharaf.com">
+              <span class="avatar" style="background-image: url('./assets/images/people/mosharaf.jpg')" aria-hidden="true"></span>
+              <span class="name-org">
+                <span class="name">Mosharaf Chowdhury</span>
+                <span class="role">University of Michigan</span>
+              </span>
+            </a>
+            <a class="chip" href="https://www.linkedin.com/in/sachin-idgunji-2042055/">
+              <span class="avatar" style="background-image: url('./assets/images/people/sachin.jpeg')" aria-hidden="true"></span>
+              <span class="name-org">
+                <span class="name">Sachin Idgunji</span>
+                <span class="role">NVIDIA</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="grid">
+        <div class="card" style="grid-column: span 12;">
+          <div class="hdr"><h3 class="h2" style="margin:0;">Contact</h3><span></span></div>
+          <p>Jae-Won Chung &lt;jwnchung@umich.edu&gt;</p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
